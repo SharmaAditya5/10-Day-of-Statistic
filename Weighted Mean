@@ -1,0 +1,15 @@
+void weightedMean(vector<int> X, vector<int> W) {
+    vector<int> xw;
+    int g,sumxy=0,sumw=0;
+    for(auto i=0;i<X.size();i++)
+    {
+        g=X[i]*W[i];
+        xw.push_back(g);
+        sumxy+=g;
+        sumw+=W[i];
+        
+    }
+    
+    cout<<fixed<<setprecision(1)<<(float)sumxy/sumw;
+
+}
